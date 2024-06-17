@@ -4,7 +4,6 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "build": "node build.js",
     "server": "nodemon index.js"
   },
   "keywords": [],
