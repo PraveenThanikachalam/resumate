@@ -15,6 +15,9 @@ function App() {
           </Routes>
         </BrowserRouter>
       </ResponseProvider>
+      <div className="flex justify-center pt-48 sm:pt-36">
+        <p>Made with 💓 - Praveen</p>
+      </div>
     </div>
   );
 }
