@@ -12,7 +12,7 @@ const port = process.env.PORT || 3001;
 
 const app = express();
 
-aapp.use(cors(corsOptions));
+app.use(cors(corsOptions));
 
 const storage = multer.memoryStorage();
 
