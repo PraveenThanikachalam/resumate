@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "server": "nodemon index.js"
+    "server": "node index.js"
   },
   "keywords": [],
   "author": "",
