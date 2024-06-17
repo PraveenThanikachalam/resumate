@@ -22,6 +22,10 @@ const upload = multer({ storage: storage });
 
 let data = null;
 
+app.get("/", (req, res) => {
+  res.send("Server is running");
+});
+
 // Endpoint to upload PDF file and get feedback
 app.post("/api/upload", upload.single("resume"), async (req, res) => {
   // Check if the file was uploaded
