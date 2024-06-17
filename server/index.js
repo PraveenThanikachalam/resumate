@@ -4,6 +4,7 @@ const multer = require("multer");
 const pdf = require("pdf-parse");
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const cors = require("cors");
+const { corsOptions } = require("./config/corsOptions");
 
 config();
 console.log(process.env.NODE_ENV);
@@ -11,11 +12,7 @@ const port = process.env.PORT || 3001;
 
 const app = express();
 
-app.use(
-  cors({
-    origin: "https://resumate-roan.vercel.app/",
-  })
-);
+aapp.use(cors(corsOptions));
 
 const storage = multer.memoryStorage();
 
