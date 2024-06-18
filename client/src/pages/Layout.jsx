@@ -8,8 +8,9 @@ export default function Layout() {
         className=" text-2xl  text-white font-mono bg-purple-700 px-5 py-2 rounded-lg "
         to="/"
       >
-        Resumate, Made with 💓 - Praveen
+        Resumate
       </Link>
+      <span className="pl-4">Made with 💓 - Praveen</span>
       <div className="divider" />
     </div>
   );
